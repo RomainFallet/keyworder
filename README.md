@@ -2,27 +2,24 @@
 
 A NodeJS script for SEO keywords. It gets the number of results and the monthly search volume from Google and use Excel (.xlsx) files as input and output.
 
-## Prerequisites on Linux & Mac OS
+## Prerequisites (Mac OS)
 
-### 1. Install Git latest (https://git-scm.com/downloads)
+### 1. Install Git (https://git-scm.com/downloads)
 
 This will be used to clone this repository on your machine.
 
-### 2. Install NodeJS v8.10.0 (https://nodejs.org/download/release/v8.10.0/)
+### 2. Install NodeJS v8.10.0 & NPM 3.5.2 (https://nodejs.org/download/release/v8.10.0/node-v8.10.0.pkg)
 
 You need to install NodeJS in version 8.10.0. This will be used to run our scripts.
 
-## Prerequisites on Linux
+### 3. Install Puppeteer
 
-### 1. Install Chromium dependencies
-
-In the command-prompt, paste the following commands and hit the "enter" key after each one:
+Open a terminal window, run the following command and hit "enter" key:
 ```sh
-sudo apt-get update
-sudo apt-get install -yq gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
+sudo npm install -g puppeteer@1.5.0 --unsafe-perm=true --allow-root
 ```
 
-## Prerequisites on Windows
+## Prerequisites (Windows)
 
 ### 1. Enable Linux Subsystem
 
@@ -52,22 +49,40 @@ Enter a username and a password when asked (password will be invisible when typi
 
 ![screenshot_12](https://user-images.githubusercontent.com/6952638/53820727-a47a3100-3f6c-11e9-94d9-5b286bc29b5a.png)
 
-### 4. Install NodeJS 8.10.0 & NPM 3.5.2
+### 4. Follow Linux prerequisites
 
-In the Ubuntu command-prompt, paste the following command and hit the "enter" key:
+Now that you have a Linux command-prompt on Windows, use it to install Linux prerequisites.
+
+## Prerequisites (Linux)
+
+### 1. Install Git
+
+This will be used to clone this repository on your machine.
 
 ```sh
 sudo apt-get update
+sudo apt-get -y git-all
+```
+
+### 2. Install NodeJS v8.10.0 & NPM 3.5.2
+
+You need to install NodeJS in version 8.10.0. This will be used to run our scripts.
+```sh
 sudo apt-get install -y nodejs npm
 ```
 
-You will be asked for the password you set up earlier.
+### 3. Install Puppeteer dependencies
 
-### 5. Install Chromium dependencies
-
-In the Ubuntu command-prompt, paste the following commands and hit the "enter" key after each one:
+You need to install these dependencies.
 ```sh
 sudo apt-get install -yq gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
+```
+
+### 4. Install Puppeteer
+
+Finally, you need to install Puppeteer. The headless Chrome Node API.
+```sh
+sudo npm install -g puppeteer@1.5.0 --unsafe-perm=true --allow-root
 ```
 
 ## Getting started
