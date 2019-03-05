@@ -52,13 +52,13 @@ Enter a username and a password when asked (password will be invisible when typi
 
 ![screenshot_12](https://user-images.githubusercontent.com/6952638/53820727-a47a3100-3f6c-11e9-94d9-5b286bc29b5a.png)
 
-### 4. Install NodeJS 8.10.0
+### 4. Install NodeJS 8.10.0 & NPM 3.5.2
 
 In the Ubuntu command-prompt, paste the following command and hit the "enter" key:
 
 ```sh
 sudo apt-get update
-sudo apt-get install nodejs
+sudo apt-get install -y nodejs npm
 ```
 
 You will be asked for the password you set up earlier.
