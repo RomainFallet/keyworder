@@ -16,8 +16,9 @@ You need to install NodeJS in version 8.10.0. This will be used to run our scrip
 
 ### 1. Install Chromium dependencies
 
-In the command-prompt, paste the following command and hit the "enter" key:
+In the command-prompt, paste the following commands and hit the "enter" key after each one:
 ```sh
+sudo apt-get update
 sudo apt-get install -yq gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
 ```
 
@@ -56,6 +57,7 @@ Enter a username and a password when asked (password will be invisible when typi
 In the Ubuntu command-prompt, paste the following command and hit the "enter" key:
 
 ```sh
+sudo apt-get update
 sudo apt-get install nodejs
 ```
 
@@ -63,7 +65,7 @@ You will be asked for the password you set up earlier.
 
 ### 5. Install Chromium dependencies
 
-In the Ubuntu command-prompt, paste the following command and hit the "enter" key:
+In the Ubuntu command-prompt, paste the following commands and hit the "enter" key after each one:
 ```sh
 sudo apt-get install -yq gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
 ```
