@@ -60,8 +60,8 @@ getNumberOfresults = async (b, k) => {
             return 'Unable to get number of results for this keyword';
         }
         let resultsString: string = resultElement.textContent.trim();
-        resultsString = resultsString.replace(/^(.+?) ([0-9\s\.]+) (.+?) (.+?)$/, '$2');
-        resultsString = resultsString.replace(/[ \.]/g, '');
+        resultsString = resultsString.replace(/^(.+?)\s([0-9\s\.]+)\s(.+?)\s(.+?)$/, '$2');
+        resultsString = resultsString.replace(/[\s\.]/g, '');
         return resultsString;
     }).catch((err: any) => { throw new Error(err); });
 
