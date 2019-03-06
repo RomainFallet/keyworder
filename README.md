@@ -2,13 +2,17 @@
 
 A NodeJS script for SEO keywords. It gets the number of results and the monthly search volume from Google and use Excel (.xlsx) files as input and output.
 
-## Prerequisites (Mac OS)
+## Prerequisites on Mac OS
 
-### 1. Install Git (https://git-scm.com/downloads)
+### 1. Install Git
+
+https://git-scm.com/downloads
 
 This will be used to clone this repository on your machine.
 
-### 2. Install NodeJS v8.10.0 & NPM 3.5.2 (https://nodejs.org/download/release/v8.10.0/node-v8.10.0.pkg)
+### 2. Install NodeJS v8.10.0 & NPM 3.5.2
+
+https://nodejs.org/download/release/v8.10.0/node-v8.10.0.pkg
 
 You need to install NodeJS in version 8.10.0. This will be used to run our scripts.
 
@@ -16,26 +20,30 @@ You need to install NodeJS in version 8.10.0. This will be used to run our scrip
 
 Open a terminal window, run the following command and hit "enter" key:
 ```sh
-sudo npm install -g puppeteer@1.5.0 --unsafe-perm=true --allow-root
+sudo npm install -g puppeteer@1.13.0 --unsafe-perm=true --allow-root
 ```
 
-## Prerequisites (Windows)
+## Prerequisites on Windows
+
+To ensure consistency between platforms, you need to install the Linux Subsystem for Windows 10. This will provide you a Linux command-prompt inside Windows.
 
 ### 1. Enable Linux Subsystem
-
-This will allow us to use a Linux command-prompt on Windows 10.
 
 ![screenshot_6](https://user-images.githubusercontent.com/6952638/53820348-e48ce400-3f6b-11e9-84ee-c0bc6e80b033.png)
 
 In the command-prompt, paste the following command and hit the "enter" key:
+
 ```sh
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
+
 ![screenshot_7](https://user-images.githubusercontent.com/6952638/53820389-f66e8700-3f6b-11e9-952c-967c394feee4.png)
 
 Then, reboot your computer.
 
-### 2. Download Ubuntu command-prompt from Microsoft Store (https://www.microsoft.com/store/productId/9NBLGGH4MSV6)
+### 2. Download Ubuntu command-prompt from Microsoft Store
+
+https://www.microsoft.com/store/productId/9NBLGGH4MSV6
 
 ![screenshot_8](https://user-images.githubusercontent.com/6952638/53820564-4ea58900-3f6c-11e9-98ef-19013f839968.png)
 
@@ -51,9 +59,9 @@ Enter a username and a password when asked (password will be invisible when typi
 
 ### 4. Follow Linux prerequisites
 
-Now that you have a Linux command-prompt on Windows, use it to install Linux prerequisites.
+Now that you have a Linux command-prompt on Windows, use it to install [**Linux prerequisites below**](#prerequisites-on-linux).
 
-## Prerequisites (Linux)
+## Prerequisites on Linux
 
 ### 1. Install Git
 
@@ -82,7 +90,7 @@ sudo apt-get install -yq gconf-service libasound2 libatk1.0-0 libc6 libcairo2 li
 
 Finally, you need to install Puppeteer. The headless Chrome Node API.
 ```sh
-sudo npm install -g puppeteer@1.5.0 --unsafe-perm=true --allow-root
+sudo npm install -g puppeteer@1.13.0 --unsafe-perm=true --allow-root
 ```
 
 ## Getting started
