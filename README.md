@@ -115,7 +115,7 @@ sudo npm install
 Then:
 
 ```sh
-sudo npm install puppeteer@1.13.0 --unsafe-perm=true --allow-root
+sudo npm install puppeteer@1.13.0 --unsafe-perm=true --allow-root --no-save
 ```
 
 Finally:
