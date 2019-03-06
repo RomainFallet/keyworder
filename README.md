@@ -62,7 +62,7 @@ This will be used to clone this repository on your machine.
 
 ```sh
 sudo apt-get update
-sudo apt-get -y git-all
+sudo apt-get install -y git
 ```
 
 ### 2. Install NodeJS v8.10.0 & NPM 3.5.2
