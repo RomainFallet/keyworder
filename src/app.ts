@@ -100,6 +100,7 @@ getSearchVolume = async (b, k) => {
             } else if (textareaElement.value && resultElement.style.display === 'none') {
                 return 'done';
             }
+            return 'loading';
         }).catch((err: any) => { throw new Error(err); });
     };
 
